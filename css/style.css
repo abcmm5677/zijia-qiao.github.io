@@ -1,15 +1,19 @@
+/* Global Styles */
+/* Enable smooth scrolling and set base font size */
 html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
 
+/* Global body styles */
 body {
-    background-color: #dde3f8;
+    background-color: #dde3f8;                  /* Light blue background colour */
     font-family: "Montserrat", sans-serif, Arial;
-    color: #1F2933;
-    line-height: 1.8;
+    color: #1F2933;                             /* Dark text colour */
+    line-height: 1.8;                             /* contrast line heighy */
 }
 
+/* Section scroll margin to make titles are not hidden behind sticky navbar */
 #home,
 #about,
 #education,
@@ -22,23 +26,27 @@ body {
 
 
 /* Navbar Styles */
+/* Main navigation bar styles */
 .custom-navbar {
-    background-color: #033a9b;
+    background-color: #033a9b;               /* Dark blue background colour */
 }
 
+/* Center menu items with large gaps */
 .custom-navbar .navbar-nav{
     gap: 5rem;
     margin-left: 2rem;
 }
 
+/* Base styles for brand and links */
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
     display: inline-block;
     border-radius: 999px;
-    color: white;
+    color: white;                              /* White text colour */
     font-weight: bold;
 }
 
+/* Hover effects */
 .custom-navbar .nav-link:hover,
 .custom-navbar .navbar-brand:hover {
     box-shadow: 0 4px 12px rgba(255, 214, 224, 0.4);
@@ -46,6 +54,7 @@ body {
     color: #1F2933;
 }
 
+/* Logo text styles for my name only */
 .logo-text {
   font-family: "Ms Madi", cursive;
   font-size: 2rem;
@@ -53,20 +62,23 @@ body {
   color: white; 
 }
 
+/* Custom white hamburger icon */
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* White border around mobile toggler button */
 .custom-navbar .navbar-toggler {
     border-color: white;
 }
 
+/* Remove default Bootstrap focus outline on toggler */
 .custom-navbar .navbar-toggler:focus{
     box-shadow: none;
 }
 
 
-/* Responsive Navbar */
+/* Responsive Navbar (Mobile) */
 @media (max-width: 991.98px) {
     .custom-navbar .navbar-nav {
         gap: 0.75rem;
@@ -74,10 +86,12 @@ body {
         align-items: center;
     }
 
+    /* Make each nav item full width */
     .custom-navbar .navbar-nav .nav-item {
         width: 100%;
     }
 
+    /* Center text for mobile nav links */
     .custom-navbar .nav-link {
         display: block;
         text-align: center;
@@ -86,6 +100,7 @@ body {
 
 
 /* Home Section Styles */
+/* Small "Welcome!" intro text above hero title */
 .home-intro {
     font-size: 0.95rem;
     letter-spacing: 0.18em;
@@ -95,12 +110,14 @@ body {
     margin-bottom: 0.75rem;
 }
 
+/* Main hero heading */
 .home-title {
     font-size: 3rem;
     font-weight: 800;
     max-width: 36rem;
 }
 
+/* Divider line under hero title */
 .home-divider {
     width: 100%;
     max-width: 36rem;
@@ -112,12 +129,14 @@ body {
     opacity: 0.4;
 }
 
+/* Intro paragraph under divider */
 .home-description {
     font-size: 1.25rem;
     color: #1F2933;
     margin-bottom: 1.5rem;
 }
 
+/* profile photo styles */
 .home-photo {
     border-radius: 50%;
     max-width: 300px;
@@ -126,7 +145,7 @@ body {
 }
 
 
-/* All Section Styles */
+/* All Section Title (h2) Styles */
 .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -136,6 +155,7 @@ body {
 
 
 /* About Section Styles */
+/* Long introduction paragraph under About Me title */
 .about-text {
     color: #1F2933;
     font-size: 1.25rem;
@@ -143,6 +163,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Language Proficiency Table Styles (bordered white card with shadow */
 .language-table {
     margin-top: 0;
     margin-bottom: 0;
@@ -157,6 +178,7 @@ body {
     border-spacing: 0;
 }
 
+/* Table header row with light blue background */
 .language-table thead th {
     background-color: #e7f0ff; 
     color: #033a9b;
@@ -164,6 +186,7 @@ body {
     border-bottom: 2px solid rgba(18, 23, 42, 0.06);
 }
 
+/* Table cell padding and text color */
 .language-table td,
 .language-table th {
     padding: 0.9rem 1.25rem;
@@ -172,20 +195,24 @@ body {
     color: #1F2933;
 }
 
+/* Add divider lines between body rows */
 .language-table tbody tr + tr td {
     border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 
+/* Zebra stripe effect on even rows */
 .language-table tbody tr:nth-child(even) td {
     background-color: #f8fbff;
 }
 
 
 /* Education Section Styles */
+/* Transparent background */
 .education-section {
     background-color: transparent;
 }
 
+/* Reusable white card for education item card styles */
 .edu-item {
     background-color: white;
     padding: 2rem 2.5rem;
@@ -194,32 +221,38 @@ body {
     margin: 0 auto 2rem;
 }
 
+/* Remove extra margin between stacked education cards */
 .edu-item + .edu-item {
     margin-top: 0;
 }
 
+/* Logo column styles */
 .edu-logo {
     height: auto;
     background-color: white;
 }
 
+/* Degree title */
 .edu-degree {
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
+/* School name in primary blue */
 .edu-school {
     font-size: 1rem;
     color: #033a9b;
     margin-bottom: 0.5rem;
 }
 
+/* Dates line in grey */
 .edu-dates {
     font-size: 0.95rem;
     color: #6b7280;
 }
 
+/* Relevant coursework subheading */
 .edu-subheading {
     font-size: 1.1rem;
     font-weight: 600;
@@ -227,6 +260,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Bullet list for coursework */
 .edu-courses {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -239,6 +273,7 @@ body {
     background-color: transparent;
 }
 
+/* Reusable white card for experience item card styles (same styles in education cards) */
 .exp-card {
     background-color: white;
     border-radius: 16px;
@@ -247,16 +282,19 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Remove extra top margin between cards */
 .exp-card + .exp-card {
     margin-top: 0;
 }
 
+/* Organization name */
 .exp-org {
     font-weight: 700;
     font-size: 1.2rem;
     color: #1F2933;
 }
 
+/* Job title in bule italics */
 .exp-role {
     color: #033a9b;
     font-style: italic;
@@ -264,17 +302,20 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Dates and location line in grey */
 .exp-dates {
     font-size: 0.95rem;
     color: #6b7280;
     margin-bottom: 0.5rem;
 }
 
+/* Description paragraph for each role */
 .exp-desc {
     font-size: 1rem;
     color: #1F2933;
 }
 
+/* "View my resume" pill button styles */
 .resume-btn {
     display: inline-block;
     margin-top: 0.5rem;
@@ -286,6 +327,7 @@ body {
     color: white;
 }
 
+/* Resume button hover */
 .resume-btn:hover {
     background-color: #ffd6e0;
     color: #1F2933;
@@ -294,6 +336,7 @@ body {
 
 
 /* Projects Section Styles */
+/* Light pink frame around project card for visual interest */
 .projects-wrapper {
     background-color: #ffd6e0;
     border-radius: 24px;
@@ -301,6 +344,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Reusable white card for project item card styles (same as Education and Experience card) */
 .project-card {
     background-color: #ffffff;
     border-radius: 16px;
@@ -308,6 +352,7 @@ body {
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
 }
 
+/* Project title */
 .project-title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -315,18 +360,21 @@ body {
     margin-bottom: 0.25rem;
 }
 
+/* Project meta (type and date) */
 .project-meta {
     font-size: 0.95rem;
     color: #6b7280;
     margin-bottom: 0.75rem;
 }
 
+/* Project description paragraph */
 .project-desc {
     font-size: 1.1rem;
     color: #1F2933;
     margin-bottom: 0.75rem;
 }
 
+/* My contributions subheading */
 .project-subheading {
     font-size: 1.05rem;
     font-weight: 600;
@@ -334,6 +382,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Bullet list for contributions */
 .project-list {
     padding-left: 1.4rem;
     margin-bottom: 0;
@@ -350,6 +399,7 @@ body {
     background-color: transparent;
 }
 
+/* Category title (Technical Skills, Soft Skills) */
 .skill-category-title {
     font-size: 1.25rem;
     font-weight: 600;
@@ -357,22 +407,25 @@ body {
     margin-bottom: 1.75rem;
 }
 
+/* Container for each skill item */
 .skill-item {
     margin-bottom: 1.25rem;
 }
 
+/* Skill name on the left */
 .skill-item .skill-label {
     font-size: 0.95rem;
     color: #1F2933;
 }
 
+/* Skill level on the right */
 .skill-item .skill-level {
     font-size: 0.85rem;
     color: #6b7280;
 }
 
 
-/* Progress bar */
+/* Progress bar styling */
 .skills-section .progress {
     height: 0.55rem;
     border-radius: 999px;
@@ -380,18 +433,21 @@ body {
     overflow: hidden;
 }
 
+/* Fill colour for progress bar uses primary blue */
 .skills-section .progress-bar {
     background-color: #033a9b;
 }
 
 
 /* Contact Section */
+/* Full-width dark blue background */
 .contact-section {
     margin-top: 3rem;
     background-color: #033a9b;
     padding: 4rem 0;
 }
 
+/* Contact section title */
 .contact-title {
     font-size: 2.2rem;
     font-weight: 700;
@@ -399,6 +455,7 @@ body {
     margin-bottom: 2.25rem;
 }
 
+/* Contact section description text above contact methods */
 .contact-text {
     font-size: 1.1rem;
     color: white;
@@ -406,8 +463,7 @@ body {
     margin: 0 auto 2.25rem;
 }
 
-
-/* LinkedIn */
+/* LinkedIn icon button */
 .contact-icon {
     width: 56px;
     height: 56px;
@@ -415,8 +471,7 @@ body {
     margin-bottom: 2rem;
 }
 
-
-/* Email and copy */
+/* Email with copy button */
 .contact-email-wrapper {
     background-color: white;
     padding: 0.75rem 1.5rem;
@@ -424,14 +479,14 @@ body {
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
 }
 
+/* Email text */
 .contact-email {
     font-size: 1rem;
     font-weight: 500;
     color: #1F2933;
 }
 
-
-/* Copy button */
+/* Copy button styling */
 .contact-copy-btn {
     border-radius: 999px;
     border: 1px solid #033a9b;
@@ -443,6 +498,7 @@ body {
     cursor: pointer;
 }
 
+/* Hover state for copy button */
 .contact-copy-btn:hover {
     background-color: #ffd6e0;
     border-color: #ffd6e0;
@@ -451,6 +507,7 @@ body {
 
 
 /* Footer Styles */
+/* Footer matching navbar and contact section colours */
 .footer {
     background-color: #033a9b;
     color: white;
